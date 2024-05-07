@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { RouterLink, RouterLinkActive } from '@angular/router';
-
 @Component({
-  selector: 'app-root',
+  selector: 'app-navbar',
   standalone: true,
   imports: [RouterOutlet, RouterLink, RouterLinkActive],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  templateUrl: './navbar.component.html',
+  styleUrl: './navbar.component.css'
 })
-export class AppComponent {
-  title = 'zeraki-analytics';
+export class NavbarComponent {
+
 }

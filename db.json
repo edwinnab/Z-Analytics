@@ -1,0 +1,37 @@
+{
+    "forms": [
+      {
+        "id": 1,
+        "class": "Form 1",
+        "mean_grade": "B",
+        "mean_mark": 65,
+        "mean_points": 8,
+        "total_students": 150
+      },
+      {
+        "id": 2,
+        "class": "Form 2",
+        "mean_grade": "B+",
+        "mean_mark": 70,
+        "mean_points": 9,
+        "total_students": 175
+      },
+      {
+        "id": 3,
+        "class": "Form 3",
+        "mean_grade": "A-",
+        "mean_mark": 75,
+        "mean_points": 10,
+        "total_students": 200
+      },
+      {
+        "id": 4,
+        "class": "Form 4",
+        "mean_grade": "A",
+        "mean_mark": 80,
+        "mean_points": 12,
+        "total_students": 180
+      }
+    ]
+}
+  
