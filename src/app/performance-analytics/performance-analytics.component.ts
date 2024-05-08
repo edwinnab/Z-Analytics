@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef } from '@angular/core';
+import { Component } from '@angular/core';
 import { Chart } from 'chart.js/auto';
 import { ChartService } from '../services/chart.service';
 import { NavbarComponent } from '../navbar/navbar.component';

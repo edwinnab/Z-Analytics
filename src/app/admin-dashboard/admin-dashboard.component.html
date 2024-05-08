@@ -1,117 +1,74 @@
 <main class="container">
-    <app-navbar></app-navbar>
-    <!-- performance metrics  -->
-    <div class="bg-light py-5 service-3 mt-4">
-        <div class="container">
-            <!-- Row  -->
-            <div class="row">
-                <!-- Column -->
-                <div class="col-md-6 wrap-service3-box">
-                    <div class="card border-0 card-shadow mb-4">
-                        <div class="card-body d-flex">
-                            <div class="my-3 mr-4 align-self-center display-2 text-success-gradiant">F1</div>
-                            <div class="align-self-center">
-                                <h6 class="font-weight-medium"><a href="javascript:void(0)" class="linking">Form One</a></h6>
-                                <p class="mt-3">Mean Points:  <span class="performance ms-2"> 7.1622 </span></p>
-                                <p class="mt-3">Mean Marks:   <span class="performance ms-2"> 47.7% </span></p>
-                                <p class="mt-3">Mean Grade:   <span class="performance ms-2"> C+ </span></p>
-                                <p class="mt-3">Students:     <span class="performance ms-2"> 37 </span></p>
-                            </div>
-                        </div>
+  <!-- navbar -->
+  <app-navbar></app-navbar>
+
+  <!-- performance metrics  -->
+  <div class="py-5 analysis-3 mt-4">
+    <!-- Row  -->
+    <div class="row">
+        <!-- Column -->
+        <div class="col-md-6 wrap-service3-box"> 
+            <div *ngFor="let item of data" class="card border-0 card-shadow mb-4">
+                <div class="card-body d-flex">
+                    <div class="my-3 mr-4 align-self-center display-2 text-success-gradiant">F{{item.id}}</div>
+                    <div class="align-self-center">
+                        <h6 class="font-weight-medium"><a routerLink="/analysis" class="linking">{{item.class}}</a></h6>
+                        <p class="mt-3">Mean Points:  <span class="performance ms-2"> {{item.mean_points}} </span></p>
+                        <p class="mt-3">Mean Marks:   <span class="performance ms-2"> {{ item.mean_mark}}</span></p>
+                        <p class="mt-3">Mean Grade:   <span class="performance ms-2"> {{ item.mean_grade }}</span></p>
+                        <p class="mt-3">Students:     <span class="performance ms-2"> {{ item.total_students}} </span></p>
                     </div>
                 </div>
-                <!-- Column -->
-                <!-- Column -->
-                <div class="col-md-6 wrap-service3-box">
-                    <div class="card border-0 card-shadow mb-4">
-                        <div class="card-body d-flex">
-                            <div class="my-3 mr-4 align-self-center display-2 text-success-gradiant">F2</div>
-                            <div class="align-self-center">
-                                <h6 class="font-weight-medium"><a href="javascript:void(0)" class="linking">Form Two</a></h6>
-                                <p class="mt-3">Mean Points:  <span class="performance ms-2"> 7.1622 </span></p>
-                                <p class="mt-3">Mean Marks:   <span class="performance ms-2"> 47.7% </span></p>
-                                <p class="mt-3">Mean Grade:   <span class="performance ms-2"> C+ </span></p>
-                                <p class="mt-3">Students:     <span class="performance ms-2"> 37 </span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Column -->
-                <div class="col-md-6 wrap-service3-box">
-                    <div class="card border-0 card-shadow mb-4">
-                        <div class="card-body d-flex">
-                            <div class="my-3 mr-4 align-self-center display-2 text-success-gradiant">F3</div>
-                            <div class="align-self-center">
-                                <h6 class="font-weight-medium"><a href="javascript:void(0)" class="linking">Form Three</a></h6>
-                                <p class="mt-3">Mean Points:  <span class="performance ms-2"> 7.1622 </span></p>
-                                <p class="mt-3">Mean Marks:   <span class="performance ms-2"> 47.7% </span></p>
-                                <p class="mt-3">Mean Grade:   <span class="performance ms-2"> C+ </span></p>
-                                <p class="mt-3">Students:     <span class="performance ms-2"> 37 </span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Column -->
-                <div class="col-md-6 wrap-service3-box">
-                    <div class="card border-0 card-shadow mb-4">
-                        <div class="card-body d-flex">
-                            <div class="my-3 mr-4 align-self-center display-2 text-success-gradiant">F4</div>
-                            <div class="align-self-center">
-                                <h6 class="font-weight-medium"><a href="javascript:void(0)" class="linking">Form Four</a></h6>
-                                <p class="mt-3">Mean Points:  <span class="performance ms-2"> 7.1622 </span></p>
-                                <p class="mt-3">Mean Marks:   <span class="performance ms-2"> 47.7% </span></p>
-                                <p class="mt-3">Mean Grade:   <span class="performance ms-2"> C+ </span></p>
-                                <p class="mt-3">Students:     <span class="performance ms-2"> 37 </span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12 mt-3 text-center">
-                    <a class="btn btn-success-gradiant text-white border-0 btn-md btn-arrow" routerLink="/analysis"><span>Analyze</span></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-sm-6 mb-4">
-            <div class="card border-0 shadow rounded-xs">
-              <div class="card-body">
-                <i class="fa fa-users icon-lg icon-primary icon-bg-primary  m-2"></i>
-                <h6>Teachers</h6>
-                <p>24</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 mb-4">
-            <div class="card border-0 shadow rounded-xs">
-              <div class="card-body">
-                <i class="fa fa-users icon-lg icon-yellow icon-bg-yellow  m-2"></i>
-                <h6>Students</h6>
-                <p>177</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 mb-4">
-            <div class="card border-0 shadow rounded-xs">
-              <div class="card-body">
-                <i class="fa fa-users icon-lg icon-purple icon-bg-purple  m-2"></i>
-                <h6>Staff</h6>
-                <p>5</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 mb-4">
-            <div class="card border-0 shadow rounded-xs">
-              <div class="card-body">
-                <i class="fa fa-cloud icon-lg icon-cyan icon-bg-cyan  m-2"></i>
-                <h6>Streams</h6>
-                <p>9</p>
-              </div>
-            </div>
           </div>
         </div>
+        
+        
+        <div class="col-md-12 mt-3 text-center">
+            <a class="btn btn-success-gradiant text-white border-0 btn-md btn-arrow" routerLink="/analysis"><span>Analyze</span></a>
+        </div>
     </div>
+  </div>
+  
+  <div class="container text-center" id="summary">
+    <div class="row">
+      <div class="col-lg-2 col-sm-4 mb-4">
+        <div class="card border-0 shadow rounded-xs">
+          <div class="card-body">
+            <i class="fa fa-users icon-lg icon-primary icon-bg-primary  m-2"></i>
+            <h6>Teachers</h6>
+            <p>24</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4">
+        <div class="card border-0 shadow rounded-xs">
+          <div class="card-body">
+            <i class="fa fa-users icon-lg icon-yellow icon-bg-yellow  m-2"></i>
+            <h6>Students</h6>
+            <p>177</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4">
+        <div class="card border-0 shadow rounded-xs">
+          <div class="card-body">
+            <i class="fa fa-desktop icon-lg icon-purple icon-bg-purple  m-2"></i>
+            <h6>Staff</h6>
+            <p>5</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4">
+        <div class="card border-0 shadow rounded-xs">
+          <div class="card-body">
+            <i class="fa fa-cloud icon-lg icon-cyan icon-bg-cyan  m-2"></i>
+            <h6>Streams</h6>
+            <p>9</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
 <router-outlet></router-outlet>
 

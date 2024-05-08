@@ -1,77 +1,109 @@
 <main class="container">
-    <app-navbar></app-navbar>
     <!-- header -->
     <header>
-        <div class="container">
-            <div class="description">
-                <h1>Empowering Decisions: Your Results, Your Analytics, Your Advantage.</h1>
-                <p>Insights at Your Fingertips: Transforming Data into Actionable Intelligence with Our Result Analytics Application.</p>
-                <button class="btn m-2">Sign up<span aria-hidden="true">→</span></button>
-                <button class="btn">Get Demo</button>
-            </div>
+        <div class="description">
+            <h1>Empowering Decisions: Your Results, Your Analytics, Your Advantage.</h1>
+            <p>Insights at Your Fingertips: Transforming Data into Actionable Intelligence with Our Result Analytics Application.</p>
+            <button class="btn m-2" routerLink="/register">Sign up<span aria-hidden="true">→</span></button>
+            <button class="btn" (click)="openVideoPopup()">Get Demo</button>
         </div>
     </header>
 
-    <!-- testimonials -->
-    <div class="container">
-        <div class="row">
-            <h2>Testimonials</h2>
-            <div class="col-md-4">
-                <div class="card d-flex mx-auto">
-                    <div class="card-image">
-                        <img class="img-fluid d-flex mx-auto" src="https://i.imgur.com/3TlwnLF.jpg">
-                    </div>
-                    <div class="card-text">
-                        <div class="card-title">Lorem Ipsum!</div>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
-                        Aenean massa. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
-                        Maecenas nec odio et ante tincidunt tempus
-                        Duis leo. Donec sodales sagittis magna
-                    </div>
-                    <div class="footer">
-                        <span id="name">Micheal Smith<br></span>
-                        <span id="position">CEO of <a href="#">Google.com</a></span>
-                    </div>
+    <!-- /features -->
+    <div class="features pd">
+        <div class="container">
+            <h3 class="title">Features</h3>
+            <div class="row text-center">
+                <div class="col-md-3">
+                <div class="square"><i class="fa fa-code"></i></div>
+                <div class="serv">
+                    <h5>Customizable Report Generation</h5>
+                    <p>Generate tailored reports for school administrators, teachers, and parents with flexible filtering and formatting options.</p>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card d-flex mx-auto">
-                    <div class="card-image">
-                        <img class="img-fluid d-flex mx-auto" src="https://i.imgur.com/Uz4FjGZ.jpg">
-                    </div>
-                    <div class="card-text">
-                        <div class="card-title">Lorem Ipsum!</div>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
-                        Aenean massa. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
-                        Maecenas nec odio et ante tincidunt tempus
-                        Duis leo. Donec sodales sagittis magna
-                    </div>
-                    <div class="footer">
-                        <span id="name">Angellia Miller<br></span>
-                        <span id="position">CEO of <a href="#">Facebook.com</a></span>
-                    </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card d-flex mx-auto ">
-                    <div class="card-image">
-                        <img class="img-fluid d-flex mx-auto" src="https://i.imgur.com/udGH5tO.jpg">
-                    </div>
-                    <div class="card-text">
-                        <div class="card-title">Lorem Ipsum!</div>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
-                        Aenean massa. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
-                        Maecenas nec odio et ante tincidunt tempus
-                        Duis leo. Donec sodales sagittis magna
-                    </div>
-                    <div class="footer">
-                        <span id="name">Christina Williams<br></span>
-                        <span id="position">UX Designer at <a href="#">Youtube.com</a></span>
-                    </div>
+                <div class="col-md-3">
+                <div class="serv">
+                    <div class="square"><i class="fa fa-cogs"></i></div>
+                    <h5>Data Analytics Tools</h5>
+                    <p>Advanced analytics tools for administrators to track school-wide trends, identify areas for improvement, and make data-driven decisions.</p>
+                </div>
+                </div>
+                <div class="col-md-3">
+                <div class="square"><i class="fa fa-globe"></i></div>
+                <div class="serv">
+                    <h5>Student Performance Dashboard</h5>
+                    <p>Visualize individual and class-wide academic progress with interactive charts and graphs.</p>
+                </div>
+                </div>
+                <div class="col-md-3">
+                <div class="square"><i class="fa fa-desktop"></i></div>
+                <div class="serv">
+                    <h5>Automated Grade Calculation</h5>
+                    <p>Streamline grading processes by automatically calculating scores based on customizable grading criteria.</p>
+                </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- testimonials -->
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card d-flex mx-auto">
+                <div class="card-image">
+                    <img class="img-fluid d-flex mx-auto" src="https://i.imgur.com/3TlwnLF.jpg" alt="user">
+                </div>
+                <div class="card-text">
+                    <div class="card-title">User Friendly!</div>
+                    The application's intuitive interface streamlined data interpretation, 
+                    saving valuable time and resources. Moreover, its comprehensive reports 
+                    facilitated informed decision-making at all levels of our institution. 
+                    Our school community flourished as a result, fostering a culture of continuous improvement. 
+                </div>
+                <div class="footer">
+                    <span id="name">John Smith<br></span>
+                    <span id="position">Principal of <a href="https://ks.sc.ke/">Kabianga High School</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card d-flex mx-auto">
+                <div class="card-image">
+                    <img class="img-fluid d-flex mx-auto" src="https://i.imgur.com/Uz4FjGZ.jpg" alt="user">
+                </div>
+                <div class="card-text">
+                    <div class="card-title">Data Driven!</div>
+                    This innovative tool provided us with 
+                    deep analytical insights, enabling us to identify student 
+                    strengths and weaknesses with unparalleled accuracy. 
+                    Armed with this knowledge, our faculty crafted targeted interventions 
+                    that propelled student achievement to unprecedented levels. 
+                </div>
+                <div class="footer">
+                    <span id="name">Agnes Miller<br></span>
+                    <span id="position">Principal of <a href="#">Junior High School</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card d-flex mx-auto ">
+                <div class="card-image">
+                    <img class="img-fluid d-flex mx-auto" src="https://i.imgur.com/udGH5tO.jpg" alt="user">
+                </div>
+                <div class="card-text">
+                    <div class="card-title">Dynamic Tool!</div>
+                    This dynamic tool has empowered our faculty to delve deeper 
+                    into student performance data, uncovering invaluable insights that have propelled our 
+                    educational practices to new heights. With its robust features and intuitive interface, 
+                    the application has facilitated seamless collaboration among our educators.
+                </div>
+                <div class="footer">
+                    <span id="name">Rosey Williams<br></span>
+                    <span id="position">Deputy Principal <a href="#">CoolSchools Kenya</a></span>
+                </div>
+            </div>
+        </div>
+    </div> 
 </main>
 <router-outlet></router-outlet>
 

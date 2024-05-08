@@ -1,37 +1,199 @@
 {
-    "forms": [
-      {
-        "id": 1,
-        "class": "Form 1",
-        "mean_grade": "B",
-        "mean_mark": 65,
-        "mean_points": 8,
-        "total_students": 150
-      },
-      {
-        "id": 2,
-        "class": "Form 2",
-        "mean_grade": "B+",
-        "mean_mark": 70,
-        "mean_points": 9,
-        "total_students": 175
-      },
-      {
-        "id": 3,
-        "class": "Form 3",
-        "mean_grade": "A-",
-        "mean_mark": 75,
-        "mean_points": 10,
-        "total_students": 200
-      },
-      {
-        "id": 4,
-        "class": "Form 4",
-        "mean_grade": "A",
-        "mean_mark": 80,
-        "mean_points": 12,
-        "total_students": 180
-      }
-    ]
+  "forms": [
+    {
+      "id": "1",
+      "class": "Form One",
+      "mean_grade": "B",
+      "mean_mark": 65,
+      "mean_points": 8,
+      "total_students": 150
+    },
+    {
+      "id": "2",
+      "class": "Form Two",
+      "mean_grade": "B+",
+      "mean_mark": 70,
+      "mean_points": 9,
+      "total_students": 175
+    },
+    {
+      "id": "3",
+      "class": "Form Three",
+      "mean_grade": "A-",
+      "mean_mark": 75,
+      "mean_points": 10,
+      "total_students": 200
+    },
+    {
+      "id": "4",
+      "class": "Form Four",
+      "mean_grade": "A",
+      "mean_mark": 80,
+      "mean_points": 12,
+      "total_students": 180
+    }
+  ],
+  "students": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "grade": "A",
+          "marks": 92
+        },
+        {
+          "name": "English",
+          "grade": "B+",
+          "marks": 85
+        },
+        {
+          "name": "Physics",
+          "grade": "A-",
+          "marks": 88
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "grade": "B",
+          "marks": 78
+        },
+        {
+          "name": "English",
+          "grade": "A",
+          "marks": 90
+        },
+        {
+          "name": "Physics",
+          "grade": "B+",
+          "marks": 82
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Michael Johnson",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "grade": "A-",
+          "marks": 87
+        },
+        {
+          "name": "English",
+          "grade": "B",
+          "marks": 79
+        },
+        {
+          "name": "Physics",
+          "grade": "A",
+          "marks": 91
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Emily Brown",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "grade": "B+",
+          "marks": 81
+        },
+        {
+          "name": "English",
+          "grade": "A-",
+          "marks": 88
+        },
+        {
+          "name": "Physics",
+          "grade": "B",
+          "marks": 77
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Daniel Wilson",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "grade": "A",
+          "marks": 90
+        },
+        {
+          "name": "English",
+          "grade": "A-",
+          "marks": 88
+        },
+        {
+          "name": "Physics",
+          "grade": "B+",
+          "marks": 82
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": "e3ab",
+      "username": "edwinna",
+      "email": "edwinnabikeri@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "5414",
+      "username": "Johny",
+      "email": "johnny@gmail.com",
+      "password": "123E"
+    },
+    {
+      "id": "81fd",
+      "username": "Mary Kimeli",
+      "email": "maty@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "3ac3",
+      "username": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "f5e2",
+      "username": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "53a5",
+      "username": "Mary Kimeli",
+      "email": "edwinnabikeri@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "dd8a",
+      "username": "Mary Kimeli",
+      "email": "edwinnabikeri@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "8cb5",
+      "username": "Mary Kimeli",
+      "email": "edwinnabikeri@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "01d7",
+      "username": "",
+      "email": "",
+      "password": ""
+    }
+  ]
 }
-  

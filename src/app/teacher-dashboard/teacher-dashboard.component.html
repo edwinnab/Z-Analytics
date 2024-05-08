@@ -1,0 +1,27 @@
+<main class="container">
+    <app-navbar></app-navbar>
+    <div class="page-content page-container" id="page-content">
+        <div class="padding">
+           <div class="row">
+              <div class="col-sm-6">
+                <div *ngFor="let student of students" class="list list-row block">
+                    <div class="list-item" data-id={{student.id}}>
+                        <div><a routerLink="/teacher" data-abc="true"><span class="w-48 avatar gd-info">{{student.name.charAt(0).toUpperCase()}}</span></a></div>
+                        <div class="flex">
+                           <a routerLink="/teacher" class="item-author text-color" data-abc="true">{{student.name}}</a>
+                           <div class="item-except text-muted text-sm h-1x">
+                            Mean Grade: <span class="m-2">{{student.grade}}</span>
+                            Mean Points: <span class="m-2">{{student.meanPoints}}</span>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+           </div>
+        </div>
+    </div>
+    <div class="canvas page-content page-container">
+        <canvas height="100" id="canvas">{{chart}}</canvas>
+    </div>
+</main>
+<router-outlet></router-outlet>
